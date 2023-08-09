@@ -8,6 +8,6 @@ Feel free to download source and edit it or do whatever you want.
 
 
 
-![alt text](https://github.com/sun8ox/sharpsnakecmd/blob/main/Screenshots/1.png?raw=true)
+![Screenshot1](https://github.com/sun8ox/sharpsnakecmd/blob/main/Screenshots/1.png?raw=true)
 <br /><br />
-![alt text](https://github.com/sun8ox/sharpsnakecmd/blob/main/Screenshots/2.png?raw=true)
+![Screenshot2](https://github.com/sun8ox/sharpsnakecmd/blob/main/Screenshots/2.png?raw=true)
