@@ -105,14 +105,7 @@ namespace Snake
 
             void clear()
             {
-                int numberOfLines = Console.CursorTop;
-
-                Console.SetCursorPosition(0, Console.CursorTop - numberOfLines);
-                for (int i = 0; i < numberOfLines; i++)
-                {
-                    Console.Write(new string(' ', Console.WindowWidth));
-                }
-                Console.SetCursorPosition(0, Console.CursorTop - numberOfLines);
+                Console.Clear();
             }
 
             int selected = 1;
