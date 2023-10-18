@@ -31,7 +31,7 @@ namespace Snake
         public static string frame = "☼";
         public static string mainMenuSelected = "*";
         public static ConsoleColor selectedColor = ConsoleColor.Blue;
-        public static string title = "SharpSnakeCMD by Sun8ox 2023";
+        public static string title = "SharpSnake";
 
         // Speed
         public static int easyH = 700;

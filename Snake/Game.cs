@@ -1216,14 +1216,7 @@ namespace Snake
 
             void clear()
             {
-                int numberOfLines = Console.CursorTop;
-
-                Console.SetCursorPosition(0, Console.CursorTop - numberOfLines);
-                for (int i = 0; i < numberOfLines; i++)
-                {
-                    Console.Write(new string(' ', Console.WindowWidth));
-                }
-                Console.SetCursorPosition(0, Console.CursorTop - numberOfLines);
+                Console.Clear();
             }
 
             void spawnApple()
@@ -1804,9 +1797,12 @@ namespace Snake
                 }
 
             }
+            var clicked = 0;
 
+            Console.Title = "SharpSnake";
             while (true)
             {
+
                 if (gameOver)
                 {
                     break;
@@ -1815,7 +1811,7 @@ namespace Snake
                 ticks++;
 
 
-                var clicked = 0;
+                
 
                 if (Console.KeyAvailable)
                 {
@@ -1837,6 +1833,7 @@ namespace Snake
 
                     if (clickedKey == down)
                     {
+
                         clicked = 2;
                         direction = 2;
                     }
@@ -1852,7 +1849,6 @@ namespace Snake
                     {
                         clicked = 4;
                         direction = 4;
-
                     }
 
 
@@ -1874,6 +1870,7 @@ namespace Snake
                 {
                     if (direction == 1)
                     {
+
                         oldPositionX = positionX;
                         oldPositionY = positionY;
 
@@ -1916,6 +1913,7 @@ namespace Snake
                     oldPositionsX.Add(oldPositionX);
                     oldPositionsY.Add(oldPositionY);
 
+
                     if (oldPositionsX.Count == length && oldPositionsY.Count == length)
                     {
                         int x = oldPositionsX[0];
@@ -1926,8 +1924,6 @@ namespace Snake
 
 
                         setBlock(x, y, false);
-
-
 
                     }
 
